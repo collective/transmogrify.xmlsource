@@ -63,4 +63,4 @@ and now run your custom converter
     $> bin/convertxml
 
 The converter parses the xml and uploads to plone via xmlrpc. or
-construct your own pipeline to transform the content into or whereever.
+construct your own pipeline to transform the content into whatever or whereever.
