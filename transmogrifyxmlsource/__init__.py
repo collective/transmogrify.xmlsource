@@ -21,7 +21,7 @@ class XMLSource(object):
         self.previous = TreeSerializer(transmogrifier, name, options, previous)
         self.context = transmogrifier.context
 
-        self.xmlfile = options.get('xmlfile','')
+        self.xmlfile = options.get('filename',options.get('xmlfile',''))    
         self.path = options.get('path', '')
         self.type = options.get('type', 'Document')
         self.itemtag = options.get('itemtag')

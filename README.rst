@@ -29,7 +29,7 @@ First create a custom `pipeline.cfg` ::
 
     [xmlsource]
     blueprint = transmogrify.xmlsource
-    xmlfile = items.xml
+    filename = items.xml
     pathtag = field1
     itemtag = item
     type = MyCustomType
