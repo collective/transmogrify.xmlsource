@@ -5,12 +5,21 @@ A simple transmogrifier blueprint to read xml files of the form ::
 
     <container>
       <item>
-        <field1>value</field1>
-        <field2>value</field2>
+        <field1>value1</field1>
+        <field2>value2</field2>
         ...
       </item>
       ...
     </container>
+
+and will spit out items of the form ::
+
+ {'field1':'value',
+  'field2':'value',
+  '_path':'value1',
+  '_type':'MyCustomType'
+  }
+
 
 
 Example
@@ -58,9 +67,13 @@ bootstrap ::
     $> buildout init
     $> bin/buildout
 
-and now run your custom converter
+and now run your custom converter ::
 
     $> bin/convertxml
+
+or ::
+
+    $> bin/convertxml --xmlsource:filename=test.xml --ploneupload:target=http://admin:admin@localhost/Plone/folder1
 
 The converter parses the xml and uploads to plone via xmlrpc. or
 construct your own pipeline to transform the content into whatever or whereever.

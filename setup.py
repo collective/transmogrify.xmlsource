@@ -21,6 +21,7 @@ setup(name='transmogrify.xmlsource',
           'setuptools',
           # -*- Extra requirements: -*-
           'collective.transmogrifier',
+          'transmogrify.siteanalyser',
           'lxml',
           ],
       entry_points="""
